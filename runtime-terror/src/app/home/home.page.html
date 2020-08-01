@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+     Register
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="auth-form">
+  <img class="logo" src="" width="70px" height="90px"/>
+  <ion-grid>
+    <ion-row>
+      <ion-col align-self-center>
+        <ion-button [routerLink]="['/doctor-register']" expand="block" fill="solid" style="--background:#48AAAD" class="button">I am a doctor</ion-button>
+        <br>
+        <ion-button [routerLink]="['/patient-register']" expand="block" fill="solid" style="--background:#48AAAD"class="button">I am a patient</ion-button>
+        <br>
+        <ion-row class="signin">
+          <span>Already a user?</span>
+          <a [routerLink]="['/sign-in']"> Sign In</a>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

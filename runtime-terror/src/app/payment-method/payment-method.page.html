@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar class="tool">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Medical Information</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+
+  <form>
+    <h5>Medical Aid</h5>
+      <ion-input class="input" placeholder="Medical Aid Name" type="text" required ></ion-input>
+      <ion-input class="input" placeholder="Medical Aid Number"  type="text" required ></ion-input>
+      <ion-input class="input" placeholder="Main Member Name" type="text" required ></ion-input>
+  
+      <h5>Card Payment</h5>
+      <ion-input class="input" placeholder="Name on card" type="text" required ></ion-input>
+      <ion-input class="input" placeholder="Card Number"  type="number" required ></ion-input>
+      <ion-input class="input" placeholder="CVV"  type="number" required ></ion-input>
+  
+   
+      <ion-row>
+        <ion-col>
+          <ion-button class="add" type="submit" fill="solid" size="small" style="--background:#48AAAD"><span class="button-text">Add Payment Method</span></ion-button>
+        </ion-col>
+      </ion-row>
+
+    <ion-row text-right>
+      <ion-col>
+        <ion-button [routerLink]="['/patient-appointments']" type="submit" fill="solid" size="small" style="--background:#48AAAD" class="save"><span class="button-text">Save</span></ion-button>
+      </ion-col>
+    </ion-row>
+   
+  </form>
+
+</ion-content>

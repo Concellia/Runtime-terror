@@ -1,0 +1,7 @@
+{
+  "name": "runtime-terror",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

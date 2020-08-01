@@ -1,0 +1,34 @@
+.logo {
+    margin-top: 10px;
+    margin-left: 125px;
+  }
+  
+  
+  .signin{
+    margin-top: 40px;
+    margin-left: 25%;
+    color: #48AAAD;
+  }
+
+
+  .input{
+    width: 70%;
+    margin: 10px 15%;
+    display: inline-block;
+    border: 1px solid #48AAAD;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .native-input.sc-ion-input-ios{
+    padding: 12px 12px 12px 12px;
+  }
+
+.button{
+    text-align: center;
+}
+
+a{
+    text-decoration:none;
+    color: #48AAAD;
+}

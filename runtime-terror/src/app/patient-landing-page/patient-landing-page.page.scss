@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .column {
+    position: relative;
+    float: left;
+    width: 27%;
+    height: 100%;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    font-size: bold;
+    background-color: #48AAAD;
+    opacity: 0.9;
+    margin-right: 5px;
+   
+   
+  
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row{
+margin-left: 10%;
+margin-bottom: 10px;
+  }
+
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+  img { 
+    width: 100%;
+    height: auto;
+  
+  }
+  .suggest{
+    opacity: 0.1;
+  }
+
+#image1{
+  background-image: url("../../assets/img/doctor.png");
+  background-color: #cccccc;
+}
+
+.doctors{
+  float: left;
+  padding-right: 10px;
+}
+
+.recommend{
+  background-color: #48AAAD;
+  width: 90%;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 3px;
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  color: wheat;
+  display: inline-block;
+}
+
+li{
+  margin-bottom: 5px;
+  font-size: 12px;
+}

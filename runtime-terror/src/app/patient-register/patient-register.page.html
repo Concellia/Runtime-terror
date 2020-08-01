@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar class="tool">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Register as patient</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+
+  <form>
+    <img class="logo" src="" width="70px" height="90px"/>
+      <ion-input class="input" placeholder="Name" type="text" required ></ion-input>
+      <ion-input class="input" placeholder="ID/Passport Number" type="number" required ></ion-input>
+      <ion-input class="input" placeholder="Phone Number" type="number" required ></ion-input>
+      <ion-input class="input" placeholder="Password" type="password" ></ion-input>
+      <ion-input class="input" placeholder="Confirm Password" type="password" ></ion-input>
+
+
+    <ion-row class="button">
+      <ion-col>
+        <ion-button type="submit" fill="solid" style="--background:#48AAAD" [routerLink]="['/sign-in']"><span class="button-text">Register</span></ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="signin">
+      <span>Already a user?</span>
+      <a [routerLink]="['/sign-in']">Sign In</a>
+    </ion-row>
+    
+  </form>
+</ion-content>

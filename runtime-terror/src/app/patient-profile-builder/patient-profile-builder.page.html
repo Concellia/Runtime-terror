@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar class="tool">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Personal Information</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+
+  <form>
+    <h5>Personal Information</h5>
+      <ion-input class="input" placeholder="Name and Surname" type="text" required ></ion-input>
+      <ion-input class="input" placeholder="Age" type="number" required ></ion-input>
+      <h5>Contact Information</h5>
+      <ion-input class="input" placeholder="Cellphone Number" type="number" required ></ion-input>
+      <ion-input class="input" placeholder="Emergencey Contact Name" type="text" required ></ion-input>
+      <ion-input class="input" placeholder="Emergencey Contact Number" type="number" required ></ion-input>
+      <h5>Address</h5>
+      <ion-input class="input" placeholder="House Number and Street Name" type="text" required ></ion-input>
+      <ion-input class="input" placeholder="Town" type="text" required ></ion-input>
+      <ion-input class="input" placeholder="City" type="text" required ></ion-input>
+      <ion-input class="input" placeholder="Postal Code" type="text" required ></ion-input>
+      <ion-input class="input" placeholder="Provincee" type="text" required ></ion-input>
+
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" fill="solid" size="small" style="--background:#48AAAD" class="add"><span class="button-text">Add address</span></ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row >
+      <ion-col>
+        <ion-button class="save" [routerLink]="['/patient-medical-information']" type="submit" fill="solid" size="small" style="--background:#48AAAD" item-right><span class="save">Save</span></ion-button>
+      </ion-col>
+    </ion-row>
+   
+  </form>
+
+</ion-content>
+

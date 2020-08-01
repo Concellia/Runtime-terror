@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar class="tool">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Appointments</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+
+  <h5>You Currently have no appointments Click below to book now!</h5>
+  <ion-row text-right>
+    <ion-col>
+      <ion-button [routerLink]="['/patient-landing-page']" type="submit" fill="solid" size="small" style="--background:#48AAAD" class="appointment"><span class="button-text">Book Appointment</span></ion-button>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

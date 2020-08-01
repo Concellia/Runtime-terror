@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar class="tool">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Medical Information</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+
+  <form>
+    <h5>Medical Conditions</h5>
+      <ion-input class="input" type="text" required ></ion-input>
+      <ion-input class="input"  type="text" required ></ion-input>
+      <ion-row>
+        <ion-col>
+          <ion-button class="add" type="submit" fill="solid" size="small" style="--background:#48AAAD"><span class="button-text">Add</span></ion-button>
+        </ion-col>
+      </ion-row>
+      <h5>Allergies</h5>
+      <ion-input class="input" type="text" required ></ion-input>
+      <ion-input class="input"  type="text" required ></ion-input>
+      <ion-row>
+        <ion-col>
+          <ion-button class="add" type="submit" fill="solid" size="small" style="--background:#48AAAD"><span class="button-text">Add</span></ion-button>
+        </ion-col>
+      </ion-row>
+      <h5>Chronic Medication</h5>
+      <ion-input class="input" type="text" required ></ion-input>
+      <ion-input class="input"  type="text" required ></ion-input>
+      <ion-row>
+        <ion-col>
+          <ion-button class="add" type="submit" fill="solid" size="small" style="--background:#48AAAD"><span class="button-text">Add</span></ion-button>
+        </ion-col>
+      </ion-row>
+
+    <ion-row text-right>
+      <ion-col>
+        <ion-button [routerLink]="['/payment-method']" type="submit" fill="solid" size="small" style="--background:#48AAAD" class="save"><span class="button-text">Save</span></ion-button>
+      </ion-col>
+    </ion-row>
+   
+  </form>
+
+</ion-content>

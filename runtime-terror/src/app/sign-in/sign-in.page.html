@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar class="tool">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Sign In</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content">
+
+  <form>
+    <img class="logo" src="" width="70px" height="90px"/>
+      <ion-input class="input" placeholder="ID or Registration number" type="number" required></ion-input>
+      <ion-input class="input" placeholder="Password" type="password" ></ion-input>
+
+    <ion-row class="button" *ngIf="isProfileComplete">
+      <ion-col>
+        <ion-button type="submit" fill="solid" style="--background:#48AAAD" [routerLink]="['/patient-landing-page']"><span class="button-text">Sign In</span></ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="button" *ngIf="!isProfileComplete">
+      <ion-col>
+        <ion-button type="submit" fill="solid" style="--background:#48AAAD" [routerLink]="['/patient-profile-builder']"><span class="button-text">Sign In</span></ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="signin">
+      <span>Don't have an account?</span>
+      <a [routerLink]="['/home']">Register</a>
+    </ion-row>
+    <ion-row class="signin">
+      <a [routerLink]="['/patient-landing-page']">Forgot password?</a>
+    </ion-row>
+    
+  </form>
+</ion-content>
