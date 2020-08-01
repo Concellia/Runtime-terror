@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'patient-appointments',
     loadChildren: () => import('./patient-appointments/patient-appointments.module').then( m => m.PatientAppointmentsPageModule)
   },
+  {
+    path: 'user-account',
+    loadChildren: () => import('./user-account/user-account.module').then( m => m.UserAccountPageModule)
+  },
 ];
 
 @NgModule({
