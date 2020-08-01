@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar class="toolbar">
     <ion-title>
      Register
     </ion-title>
@@ -7,13 +7,13 @@
 </ion-header>
 
 <ion-content class="auth-form">
-  <img class="logo" src="" width="70px" height="90px"/>
+  <img class="logo" src="../../assets/img/logo.png" width="157px" height="157px"/>
   <ion-grid>
     <ion-row>
       <ion-col align-self-center>
-        <ion-button [routerLink]="['/doctor-register']" expand="block" fill="solid" style="--background:#48AAAD" class="button">I am a doctor</ion-button>
+        <button [routerLink]="['/doctor-register']" expand="block" fill="solid" style="--background:#48AAAD" class="button"><span class="button-text">I am a doctor</span></button>
         <br>
-        <ion-button [routerLink]="['/patient-register']" expand="block" fill="solid" style="--background:#48AAAD"class="button">I am a patient</ion-button>
+        <button [routerLink]="['/patient-register']" expand="block" fill="solid" style="--background:#48AAAD"class="button"><span class="button-text">I am a patient</span></button>
         <br>
         <ion-row class="signin">
           <span>Already a user?</span>
