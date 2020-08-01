@@ -28,15 +28,14 @@
     
   </ion-row>
 </ion-grid>
-<div class="recommend" *ngFor="let item of doctors; index as i">
-  <div *ngIf="item.name === '5'">
+<div class="recommend" *ngFor="let item of rate; index as i">
   <img class="doctors" src="assets/img/doctor2.jpg" alt="Snow" style="width:30%">
   <ul style="list-style: none;" class="list">
     <li style="font-size: 15px; font-weight: bold;">{{item["name"]}}</li>
-    <li>{{doctors["practice"]}}</li>
-    <li>{{doctors["distance"]}}</li>
-    <li>{{doctors["address"]}}</li>
-    <li style="font-weight: bold;">{{doctors["time"]}}</li>
+    <li>{{item["practice"]}}</li>
+    <li>{{item["distance"]}}</li>
+    <li>{{item["address"]}}</li>
+    <li style="font-weight: bold;">{{item["time"]}}</li>
     <li>
       <ion-icon name="star" style="color: orange;"></ion-icon>
       <ion-icon name="star" style="color: orange;"></ion-icon>
@@ -45,6 +44,5 @@
       <ion-icon name="star" style="color: orange;"></ion-icon>
     </li>
    </ul>
-</div>
 </div>
 </ion-content>
