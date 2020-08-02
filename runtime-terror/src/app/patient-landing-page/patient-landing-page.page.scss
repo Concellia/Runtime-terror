@@ -35,14 +35,17 @@ margin-bottom: 10px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #ffffff;
 }
   img { 
     width: 100%;
     height: auto;
+    color: blue($color: #000000);
   
   }
   .suggest{
     opacity: 0.1;
+
   }
 
 #image1{
