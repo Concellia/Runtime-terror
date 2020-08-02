@@ -9,8 +9,8 @@
 
 <ion-content class="content">
 
-  <ion-searchbar class="search"></ion-searchbar>
-  <div *ngIf="shows">
+  <ion-searchbar *ngIf="!showAppointment" class="search"></ion-searchbar>
+  <div *ngIf="shows && !showAppointment">
 <ion-grid >
   <ion-row>
     <div class="row">
@@ -37,6 +37,7 @@
   </ion-row>
 </ion-grid>
 <div class="recommend" *ngFor="let item of rate; index as i">
+  <a (click)="appointment(item.name)">
   <img class="doctors" src="assets/img/doctor2.jpg" alt="Snow" style="width:30%">
   <ul style="list-style: none;" class="list">
     <li style="font-size: 15px; font-weight: bold;">{{item["name"]}}</li>
@@ -52,9 +53,10 @@
       <ion-icon name="star" style="color: orange;"></ion-icon>
     </li>
    </ul>
+  </a>
 </div>
 </div>
-<div *ngIf="!shows">
+<div *ngIf="!shows || !showAppointment" >
   <div class="recommend" *ngFor="let item of rate; index as i">
     <img class="doctors" src="assets/img/doctor2.jpg" alt="Snow" style="width:30%">
     <ul style="list-style: none;" class="list">
@@ -71,6 +73,32 @@
         <ion-icon name="star" style="color: orange;"></ion-icon>
       </li>
      </ul>
+  </div>
+</div>
+<div *ngIf="showAppointment">
+  <div class="appoint" *ngFor="let item of appoint; index as i">
+    <img class="doctors" src="assets/img/doctor2.jpg" alt="Snow" style="width:30%">
+    <ul style="list-style: none;" class="list">
+      <li style="font-size: 15px; font-weight: bold;">{{item["name"]}}</li>
+      <li>{{item["practice"]}}</li>
+      <li>{{item["distance"]}}</li>
+      <li>{{item["address"]}}</li>
+      <li style="font-weight: bold;">{{item["time"]}}</li>
+      <li>
+        <ion-icon name="star" style="color: orange;"></ion-icon>
+        <ion-icon name="star" style="color: orange;"></ion-icon>
+        <ion-icon name="star" style="color: orange;"></ion-icon>
+        <ion-icon name="star" style="color: orange;"></ion-icon>
+        <ion-icon name="star" style="color: orange;"></ion-icon>
+      </li>
+     </ul>
+  </div>
+  <div class="book">
+
+  </div>
+  <div class="symptoms">
+    <h6>Symptoms</h6>
+    <ion-input class="input" placeholder="Describe your symptoms here.."  type="text" required ></ion-input>
   </div>
 </div>
 </ion-content>

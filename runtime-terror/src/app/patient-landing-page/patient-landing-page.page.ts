@@ -11,7 +11,9 @@ export class PatientLandingPagePage implements OnInit {
   generalP = [];
   dent = [];
   neuro = [];
+  appoint = [];
   shows = true;
+  showAppointment = false;
 rating()
 {
 
@@ -60,6 +62,16 @@ rating()
       this.shows = false;
      this.rate = this.neuro;
   }
-
+appointment(name)
+{
+  for(let i = 0; i<this.doctors.length; i++)
+  {
+    if(this.doctors[i].name == name)
+    {
+      this.showAppointment = true;
+      this.appoint.push(this.doctors[i])
+    }
+  }
+}
 
 }
