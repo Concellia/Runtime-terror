@@ -5,30 +5,62 @@
 </ion-header>
 
 <ion-content>
-  <div style="text-align:center">
+  <div style="text-align: center;">
     <div>
-    <webcam [height]="500" [width]="500" [trigger]="triggerObservable" (imageCapture)="handleImage($event)" *ngIf="showWebcam"
-    [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable" [videoOptions]="videoOptions" (cameraSwitched)="cameraWasSwitched($event)"
-    (initError)="handleInitError($event)"></webcam>
-    <br/>
-    <div class="actionBtn" (click)="triggerSnapshot();" title="Take Picture"><ion-icon name="camera-outline"></ion-icon></div>
-    <div class="actionBtn" (click)="showNextWebcam(true);" title="Switch Camera"><ion-icon name="camera-reverse-outline"></ion-icon></div>
+      <webcam
+        [height]="500"
+        [width]="500"
+        [trigger]="triggerObservable"
+        (imageCapture)="handleImage($event)"
+        *ngIf="showWebcam"
+        [allowCameraSwitch]="allowCameraSwitch"
+        [switchCamera]="nextWebcamObservable"
+        [videoOptions]="videoOptions"
+        (cameraSwitched)="cameraWasSwitched($event)"
+        (initError)="handleInitError($event)"
+      ></webcam>
+      <br />
+      <div class="container">
+        <div
+          class="actionBtn"
+          (click)="triggerSnapshot();"
+          title="Take Picture"
+        >
+          <ion-icon name="camera-outline"></ion-icon>
+        </div>
+        <div
+          class="actionBtn"
+          (click)="showNextWebcam(true);"
+          title="Switch Camera"
+        >
+          <ion-icon name="camera-reverse-outline"></ion-icon>
+        </div>
+      </div>
     </div>
-    </div>
-    <input type="file" name="file"  (change)="upload($event)" />
-    <ion-row >
-      <ion-col>
-        <ion-button class="save" [routerLink]="['/consultation']" type="submit" fill="solid" size="small" style="--background:#48AAAD" item-right><span class="save"><ion-icon name="cloud-upload-outline" slot="start" style="color: black; margin-right: 4px;"></ion-icon>Upload</span></ion-button>
-      </ion-col>
-    </ion-row>
-          <ion-row >
-        <ion-col>
-          <ion-button class="save" [routerLink]="['/consultation']" type="submit" fill="solid" size="small" style="--background:#48AAAD" item-right><span class="save"><ion-icon name="cloud-download-outline" slot="start" style="color: black; margin-right: 4px;"></ion-icon>Downlod</span></ion-button>
-        </ion-col>
-      </ion-row>
+  </div>
 
-      <ion-icon name="medkit" class="icon"></ion-icon>
-      <ion-icon name="thermometer" class="icon"></ion-icon>
-      <ion-icon name="pulse" class="icon"></ion-icon>
-    
+  <ion-icon name="medkit" class="icon"></ion-icon>
+  <ion-icon name="thermometer" class="icon"></ion-icon>
+  <ion-icon name="pulse" class="icon"></ion-icon>
+  <ion-row>
+    <ion-col>
+      <ion-button
+        class="save"
+        [routerLink]="['/consultation']"
+        type="submit"
+        fill="solid"
+        size="small"
+        style="--background: #48aaad;"
+        item-right
+        ><span class="save"
+          ><ion-icon
+            name="cloud-download-outline"
+            slot="start"
+            style="color: black; margin-right: 4px;"
+          ></ion-icon
+          >Downlod</span
+        ></ion-button
+      >
+    </ion-col>
+  </ion-row>
 </ion-content>
