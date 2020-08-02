@@ -11,12 +11,20 @@
     [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable" [videoOptions]="videoOptions" (cameraSwitched)="cameraWasSwitched($event)"
     (initError)="handleInitError($event)"></webcam>
     <br/>
-    <div class="actionBtn" (click)="triggerSnapshot();" title="Take Picture">📸</div>
-    <div class="actionBtn" (click)="showNextWebcam(true);" title="Switch Camera">🔁</div>
+    <div class="actionBtn" (click)="triggerSnapshot();" title="Take Picture"><ion-icon name="camera-outline"></ion-icon></div>
+    <div class="actionBtn" (click)="showNextWebcam(true);" title="Switch Camera"><ion-icon name="camera-reverse-outline"></ion-icon></div>
     </div>
     </div>
-    <h4 *ngIf="errors.length > 0">Messages:</h4>
-    <ul *ngFor="let error of errors">
-    <li>{{error | json}}</li>
-    </ul>
+    <input type="file" name="file"  (change)="upload($event)" />
+    <ion-row >
+      <ion-col>
+        <ion-button class="save" [routerLink]="['/consultation']" type="submit" fill="solid" size="small" style="--background:#48AAAD" item-right><span class="save"><ion-icon name="cloud-upload-outline" slot="start" style="color: black; margin-right: 4px;"></ion-icon>Upload</span></ion-button>
+      </ion-col>
+    </ion-row>
+          <ion-row >
+        <ion-col>
+          <ion-button class="save" [routerLink]="['/consultation']" type="submit" fill="solid" size="small" style="--background:#48AAAD" item-right><span class="save"><ion-icon name="cloud-download-outline" slot="start" style="color: black; margin-right: 4px;"></ion-icon>Downlod</span></ion-button>
+        </ion-col>
+      </ion-row>
+    
 </ion-content>
