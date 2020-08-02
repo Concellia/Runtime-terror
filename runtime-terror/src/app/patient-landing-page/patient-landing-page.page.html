@@ -111,5 +111,10 @@
     <h6>Symptoms</h6>
     <ion-input class="input" placeholder="Describe your symptoms here.."  type="text" required ></ion-input>
   </div>
+  <ion-row >
+    <ion-col>
+      <ion-button class="save" [routerLink]="['/appointment-summary']" type="submit" fill="solid" size="small" style="--background:#48AAAD" item-right><span class="save">Next</span></ion-button>
+    </ion-col>
+  </ion-row>
 </div>
 </ion-content>

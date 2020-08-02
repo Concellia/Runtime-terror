@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'user-account',
     loadChildren: () => import('./user-account/user-account.module').then( m => m.UserAccountPageModule)
   },
+  {
+    path: 'appointment-summary',
+    loadChildren: () => import('./appointment-summary/appointment-summary.module').then( m => m.AppointmentSummaryPageModule)
+  },
 ];
 
 @NgModule({
