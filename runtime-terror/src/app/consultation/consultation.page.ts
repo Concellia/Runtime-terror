@@ -8,7 +8,25 @@ import { WebcamImage, WebcamInitError, WebcamUtil } from 'ngx-webcam';
   styleUrls: ['./consultation.page.scss'],
 })
 export class ConsultationPage implements OnInit {
+  image: any;
+  http: any;
+  loadingCtrl: any;
+  upload(str:any)
+  {
+    const formData = new FormData();
 
+    this.image=str.target.files[0];
+
+    formData.append('files[]', this.image);
+    console.log(formData,this.image);
+    this.http.post("http://localhost/test/test.php",formData)
+    .subscribe((data:any)=>{
+      console.log(data);
+    })
+    console.log(str);
+  }
+  
+  
   @Output()
   public pictureTaken = new EventEmitter<WebcamImage>();
   // toggle webcam on/off
