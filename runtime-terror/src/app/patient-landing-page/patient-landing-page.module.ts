@@ -7,9 +7,11 @@ import { IonicModule } from '@ionic/angular';
 import { PatientLandingPagePageRoutingModule } from './patient-landing-page-routing.module';
 
 import { PatientLandingPagePage } from './patient-landing-page.page';
+import { NgCalendarModule  } from 'ionic2-calendar';
 
 @NgModule({
   imports: [
+    NgCalendarModule,
     CommonModule,
     FormsModule,
     IonicModule,
@@ -18,3 +20,4 @@ import { PatientLandingPagePage } from './patient-landing-page.page';
   declarations: [PatientLandingPagePage]
 })
 export class PatientLandingPagePageModule {}
+
