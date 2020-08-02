@@ -9,6 +9,8 @@ export class PatientLandingPagePage implements OnInit {
   doctors: any;
   rate = [];
   generalP = [];
+  dent = [];
+  neuro = [];
   shows = true;
 rating()
 {
@@ -30,6 +32,14 @@ rating()
         {
           this.generalP.push(json[i])
         }
+        if(json[i].practice == "Dentist")
+        {
+          this.dent.push(json[i])
+        }
+        if(json[i].practice == "Neurologists")
+        {
+          this.neuro.push(json[i])
+        }
       }
     });
   }
@@ -39,5 +49,17 @@ rating()
       this.shows = false;
      this.rate = this.generalP;
   }
+  dentist()
+  {
+      this.shows = false;
+     this.rate = this.dent;
+  }
+
+  neurologist()
+  {
+      this.shows = false;
+     this.rate = this.neuro;
+  }
+
 
 }
