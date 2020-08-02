@@ -1,9 +1,32 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>user-account</ion-title>
+    <ion-title>Account</ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content>
-
+<ion-content class="content">
+<ion-item [routerLink]="['/patient-profile-builder']" class="item">
+  <ion-icon name="person-circle-outline"></ion-icon>
+  <ion-label>
+    Personal Information
+  </ion-label>
+</ion-item>
+<ion-item [routerLink]="['/patient-medical-information']" class="item">
+  <ion-icon name="medkit-outline"></ion-icon>  <ion-label> Medical Information </ion-label>
+</ion-item>
+<ion-item [routerLink]="['/patient-appointments']" class="item">
+  <ion-icon name="calendar-outline"></ion-icon>  <ion-label> Appointments </ion-label>
+</ion-item>
+<ion-item [routerLink]="['/payment-method']" class="item">
+  <ion-icon name="wallet-outline"></ion-icon>  <ion-label> Payments </ion-label>
+</ion-item>
+<ion-item [routerLink]="['/patient-profile-builder']" class="item">
+  <ion-icon name="settings-outline"></ion-icon>  <ion-label> Settings </ion-label>
+</ion-item>
+<ion-item [routerLink]="['/patient-profile-builder']" class="item">
+  <ion-icon name="help-circle-outline"></ion-icon>
+  <ion-label> Help </ion-label>
+</ion-item>
+<ion-item [routerLink]="['/patient-profile-builder']" class="item">
+  <ion-label> About </ion-label>
+</ion-item>
 </ion-content>
