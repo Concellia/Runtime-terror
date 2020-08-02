@@ -56,8 +56,9 @@
   </a>
 </div>
 </div>
-<div *ngIf="!shows || !showAppointment" >
+<div *ngIf="!shows && !showAppointment" >
   <div class="recommend" *ngFor="let item of rate; index as i">
+    <a (click)="appointment(item.name)">
     <img class="doctors" src="assets/img/doctor2.jpg" alt="Snow" style="width:30%">
     <ul style="list-style: none;" class="list">
       <li style="font-size: 15px; font-weight: bold;">{{item["name"]}}</li>
@@ -73,6 +74,7 @@
         <ion-icon name="star" style="color: orange;"></ion-icon>
       </li>
      </ul>
+    </a>
   </div>
 </div>
 <div *ngIf="showAppointment">
