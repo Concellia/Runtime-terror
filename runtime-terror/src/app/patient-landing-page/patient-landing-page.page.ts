@@ -16,6 +16,11 @@ export class PatientLandingPagePage implements OnInit {
   showAppointment = false;
   eventSource = [];
 
+source = "assets/img/doctor2.jpg"
+insertpicture(id){
+  this.source = "assets/img/doctor"+id+".jpg"
+}
+
   calendar = {
     mode: 'month',
     currentDate: new Date(),

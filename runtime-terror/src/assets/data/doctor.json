@@ -1,5 +1,6 @@
 [
     {
+      "id":1,
       "name": "Dr Mokoena",
       "practice": "General Practitioner",
       "address": "250 Marshall street Johannesburg",
@@ -9,6 +10,7 @@
       "distance": "10km Away"
     },
     {
+      "id":2,
     "name":"Dr Laubuschagne",
     "practice": "Dentist",
       "address": "250 Marshall street Johannesburg",
@@ -18,6 +20,7 @@
       "distance": "900km Away"
     },
     {
+      "id":3,
     "name": "Dr Smith",
     "practice": "General Practitioner",
     "address": "250 Marshall street Johannesburg",
@@ -27,6 +30,7 @@
     "distance": "23km Away"
     },
     {
+      "id":4,
     "name":"Dr Cho",
     "practice": "Pediatricians",
     "address": "250 Marshall street Johannesburg",
@@ -36,6 +40,7 @@
     "distance": "49km Away"
     },
     {
+      "id":5,
     "name": "Dr Sthole",
     "practice": "Allergist",
     "address": "250 Marshall street Johannesburg",
@@ -45,6 +50,7 @@
     "distance": "1km Away"
     },
     {
+      "id":6,
         "name": "Dr Chavalala",
         "practice": "Dermatologist",
         "address": "250 Marshall street Johannesburg",
@@ -54,6 +60,7 @@
         "distance": "200km Away"
     },
     {
+      "id":7,
         "name": "Dr Doe",
         "practice": "Dentist",
         "address": "250 Marshall street Johannesburg",
@@ -63,6 +70,7 @@
         "distance":"15km Away"
     },
     {
+      "id":8,
         "name":"Dr George",
         "practice": "Neurologists",
         "address": "250 Marshall street Johannesburg",
@@ -72,6 +80,7 @@
         "distance": "52km Away"
     },
     {
+      "id":9,
         "name": "Dr Ramabulana",
         "practice": "General Practitioner",
         "address": "250 Marshall street Johannesburg",
@@ -81,6 +90,7 @@
         "distance": "200km Away"
     },
     {
+      "id":10,
     "name": "Dr Khosa",
     "practice": "General Practitioner",
     "address": "250 Marshall street Johannesburg",
