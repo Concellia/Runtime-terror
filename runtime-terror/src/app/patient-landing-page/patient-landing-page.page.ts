@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class PatientLandingPagePage implements OnInit {
   doctors: any;
   rate = [];
+  generalP = [];
+  shows = true;
 rating()
 {
 
@@ -24,8 +26,18 @@ rating()
         {
           this.rate.push(json[i])
         }
+        if(json[i].practice == "General Practitioner")
+        {
+          this.generalP.push(json[i])
+        }
       }
     });
+  }
+
+  generalPractitioner()
+  {
+      this.shows = false;
+     this.rate = this.generalP;
   }
 
 }
